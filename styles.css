@@ -44,7 +44,6 @@ body {
     padding: 10px 28px;
     width: 393px;
     border-radius: 2%;
-    margin-right: -20px;
 }
 
 .search {
@@ -60,15 +59,54 @@ body {
     color: black;
     font-size: 12px;
     font-weight: 700;
+    margin-bottom: 5px;
     padding-bottom: 5px;
+
 }
 
-.user-name-pic {
-    width: 24px;
-    height: 24px;
+.user-name-bcolor {
+    margin: 10px 0px 0px 10px;
+}
+
+.user-name-bcolor span {
+    font-size: 13px;
+    color: black;
+}
+
+.user-name-wcolor span {
+    font-size: 13px;
+    color: white;
+}
+
+.status-update-info {
+    left: 10%;
+    display: flex;
+}
+
+.user-action {
+    margin: 10px 0px 0px 12px;
+}
+
+.user-name-pic img {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    padding-right: 2px;
-    margin-top: 2px;
+    margin-top: 10px;
+}
+
+.user-name-pic-sidebar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+   
+}
+
+.user-name-pic-feed {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    margin-left: 5px;
 }
 
 .body {
@@ -78,13 +116,17 @@ body {
 
 .content {
     display: flex;
-
 }
 
 .sidebar {
     flex: 0 0 18%;
     font-size: 13px;
     color: rgb(29,33,41)
+}
+
+.sidebar-pic {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .sidebar li {
@@ -102,7 +144,8 @@ body {
 .post-update {
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
     width: 40%;
-    min-width: 450px;
+    border-radius: 5px;
+    min-width: 500px;
     background-color: white;
 }
 
@@ -114,17 +157,58 @@ body {
 
 .post-options {
     margin: 15px 0px 15px 0px;
-    
+    padding: 15px 0px 15px 0px;
+}
+
+.post-img {
+    width: 500px
 }
 
 .stories {
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
-    width: 40%;
+    width: 30%;
     background-color: white;
+    border-radius: 5px;
+    height: 28%;
+    margin-left: 20px
 }
 
-.stories h5 {
+.stories h3 {
+    margin-top: 10px;
+    margin-left: 7px;
+}
 
+.status-input-form {
+    padding: 10px 0px 10px 0px;
+    margin-left: 20px;
+}
+
+.status-input {
+    border: none;
+    padding: 10px 28px;
+    width: 300px;
+    border-radius: 2%;
+    height: 50px;
+}
+
+.status-options {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.status-options img {
+    margin: 17px 0px 0px 5px;
+}
+
+.story {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user-info {
+    margin-left: 10px;
 }
 
 .story span {
@@ -140,6 +224,21 @@ body {
     border-radius: 50%;
     padding-right: 2px;
     margin-top: 2px;
+}
+
+.user-name-post {
+    font-size: 14px;
+    color: #4267b2;
+}
+
+
+.shared {
+    font-size: 14px;
+}
+
+.a-post {
+    font-size: 14px;
+    color: #4267b2;
 }
 
 @media only screen and (max-width: 1095px) {
@@ -162,6 +261,7 @@ body {
     .stories {
         order: -1;
     }
+    
 
 }
 
